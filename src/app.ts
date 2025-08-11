@@ -114,7 +114,7 @@ app.use('/api/ask_ai', askAiRoute);
 
 
 // ---- Serve built frontend (CommonJS-safe) ----
-const clientDist = path.join(__dirname, '..', 'client');
+/*const clientDist = path.join(__dirname, '..', 'client');
 app.use(express.static(clientDist));
 
 app.get('/{*any}', (req, res, next) => {
@@ -126,7 +126,7 @@ app.get('/{*any}', (req, res, next) => {
   } else {
     res.status(500).send('Frontend not built or missing.');
   }
-});
+});*/
 
 
 
