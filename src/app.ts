@@ -129,6 +129,13 @@ app.get('/{*any}', (req, res, next) => {
 });*/
 
 
+app.get('/', (_req, res) => {
+  res.send('Propvia BE is up');
+});
+
+app.get('/api/health', (_req, res) => {
+  res.status(200).json({ ok: true, uptime: process.uptime() });
+});
 
 
 
